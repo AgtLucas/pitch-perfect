@@ -31,6 +31,15 @@
                                 <color key="textColor" red="0.0" green="0.10503186677631579" blue="0.39088199013157893" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d75-vH-kh9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Stop Record">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="157" y="530" width="87" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -44,6 +53,7 @@
                             <mask key="subviews">
                                 <exclude reference="oyx-xy-WL6"/>
                                 <exclude reference="GrD-3Y-7rO"/>
+                                <exclude reference="d75-vH-kh9"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7yF-04-TBF"/>
@@ -57,6 +67,7 @@
                             <mask key="subviews">
                                 <include reference="oyx-xy-WL6"/>
                                 <include reference="GrD-3Y-7rO"/>
+                                <include reference="d75-vH-kh9"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7yF-04-TBF"/>
