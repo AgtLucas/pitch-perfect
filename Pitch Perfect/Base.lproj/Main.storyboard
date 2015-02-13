@@ -38,6 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p7i-qW-Czy"/>
+                                    <segue destination="FQk-pO-ydX" kind="show" id="lEQ-BC-rlg"/>
                                 </connections>
                             </button>
                         </subviews>
