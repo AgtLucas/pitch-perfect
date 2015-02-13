@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
 
+    @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var recordingInProgress: UILabel!
     @IBOutlet weak var stopButton: UIButton!
 
@@ -35,7 +36,6 @@ class ViewController: UIViewController {
 
     @IBAction func stopRecord(sender: UIButton) {
         recordingInProgress.hidden = true
-        stopButton.hidden = true
     }
 }
 
