@@ -21,9 +21,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet var recordingStatus: UILabel!
+
     @IBAction func recordAudio(sender: UIButton) {
-        // TODO: Show text "recording in progress"
-        println("Recording in progress")
+        recordingStatus.hidden = false
     }
 }
 
