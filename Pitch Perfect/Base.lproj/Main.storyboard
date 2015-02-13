@@ -28,11 +28,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrD-3Y-7rO">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.10503186677631579" blue="0.39088199013157893" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="161" y="368" width="79" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -40,6 +37,7 @@
                             <constraint firstAttribute="centerY" secondItem="oyx-xy-WL6" secondAttribute="centerY" id="7yF-04-TBF"/>
                             <constraint firstAttribute="centerX" secondItem="oyx-xy-WL6" secondAttribute="centerX" id="FDD-fk-bjp"/>
                             <constraint firstAttribute="centerX" secondItem="GrD-3Y-7rO" secondAttribute="centerX" id="tcs-HR-kgT"/>
+                            <constraint firstAttribute="centerY" secondItem="GrD-3Y-7rO" secondAttribute="centerY" constant="-78.5" id="vg4-wX-Dp0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -50,6 +48,7 @@
                                 <exclude reference="7yF-04-TBF"/>
                                 <exclude reference="FDD-fk-bjp"/>
                                 <exclude reference="tcs-HR-kgT"/>
+                                <exclude reference="vg4-wX-Dp0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -61,6 +60,7 @@
                                 <include reference="7yF-04-TBF"/>
                                 <include reference="FDD-fk-bjp"/>
                                 <include reference="tcs-HR-kgT"/>
+                                <include reference="vg4-wX-Dp0"/>
                             </mask>
                         </variation>
                     </view>
