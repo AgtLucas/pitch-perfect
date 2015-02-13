@@ -30,8 +30,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="161" y="358" width="79" height="21"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="161" y="368" width="79" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -39,6 +39,7 @@
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="oyx-xy-WL6" secondAttribute="centerY" id="7yF-04-TBF"/>
                             <constraint firstAttribute="centerX" secondItem="oyx-xy-WL6" secondAttribute="centerX" id="FDD-fk-bjp"/>
+                            <constraint firstAttribute="centerX" secondItem="GrD-3Y-7rO" secondAttribute="centerX" id="tcs-HR-kgT"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -48,6 +49,7 @@
                             <mask key="constraints">
                                 <exclude reference="7yF-04-TBF"/>
                                 <exclude reference="FDD-fk-bjp"/>
+                                <exclude reference="tcs-HR-kgT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -58,6 +60,7 @@
                             <mask key="constraints">
                                 <include reference="7yF-04-TBF"/>
                                 <include reference="FDD-fk-bjp"/>
+                                <include reference="tcs-HR-kgT"/>
                             </mask>
                         </variation>
                     </view>
