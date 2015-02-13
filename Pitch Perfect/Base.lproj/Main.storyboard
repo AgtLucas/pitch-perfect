@@ -36,6 +36,7 @@
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="oyx-xy-WL6" secondAttribute="centerY" id="7yF-04-TBF"/>
                             <constraint firstAttribute="centerX" secondItem="oyx-xy-WL6" secondAttribute="centerX" id="FDD-fk-bjp"/>
+                            <constraint firstItem="GrD-3Y-7rO" firstAttribute="top" secondItem="oyx-xy-WL6" secondAttribute="bottom" constant="18" id="sPT-Ce-Y8L"/>
                             <constraint firstAttribute="centerX" secondItem="GrD-3Y-7rO" secondAttribute="centerX" id="tcs-HR-kgT"/>
                             <constraint firstAttribute="centerY" secondItem="GrD-3Y-7rO" secondAttribute="centerY" constant="-78.5" id="vg4-wX-Dp0"/>
                         </constraints>
@@ -47,6 +48,7 @@
                             <mask key="constraints">
                                 <exclude reference="7yF-04-TBF"/>
                                 <exclude reference="FDD-fk-bjp"/>
+                                <exclude reference="sPT-Ce-Y8L"/>
                                 <exclude reference="tcs-HR-kgT"/>
                                 <exclude reference="vg4-wX-Dp0"/>
                             </mask>
@@ -59,6 +61,7 @@
                             <mask key="constraints">
                                 <include reference="7yF-04-TBF"/>
                                 <include reference="FDD-fk-bjp"/>
+                                <include reference="sPT-Ce-Y8L"/>
                                 <include reference="tcs-HR-kgT"/>
                                 <include reference="vg4-wX-Dp0"/>
                             </mask>
