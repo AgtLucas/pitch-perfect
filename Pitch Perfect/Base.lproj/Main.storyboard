@@ -25,6 +25,15 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ejh-UB-qIi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrD-3Y-7rO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="358" width="79" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -34,6 +43,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="oyx-xy-WL6"/>
+                                <exclude reference="GrD-3Y-7rO"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7yF-04-TBF"/>
@@ -43,6 +53,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="oyx-xy-WL6"/>
+                                <include reference="GrD-3Y-7rO"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7yF-04-TBF"/>
