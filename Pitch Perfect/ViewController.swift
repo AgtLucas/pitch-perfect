@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+
     @IBOutlet weak var recordingInProgress: UILabel!
 
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func recordAudio(sender: UIButton) {
-
+        recordingInProgress.hidden = false
     }
 }
 
