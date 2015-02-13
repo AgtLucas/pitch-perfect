@@ -27,11 +27,13 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         stopButton.hidden = true
+        recordButton.enabled = true
     }
 
 
     @IBAction func recordAudio(sender: UIButton) {                stopButton.hidden = false
         recordingInProgress.hidden = false
+        recordButton.enabled = false
     }
 
     @IBAction func stopRecord(sender: UIButton) {
