@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tNs-ls-0RL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -60,13 +61,13 @@
                                 <exclude reference="d75-vH-kh9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7yF-04-TBF"/>
-                                <exclude reference="FDD-fk-bjp"/>
                                 <exclude reference="sPT-Ce-Y8L"/>
                                 <exclude reference="tcs-HR-kgT"/>
                                 <exclude reference="vg4-wX-Dp0"/>
                                 <exclude reference="G1Q-e7-bIt"/>
                                 <exclude reference="Xe4-cT-poB"/>
+                                <exclude reference="7yF-04-TBF"/>
+                                <exclude reference="FDD-fk-bjp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -76,13 +77,13 @@
                                 <include reference="d75-vH-kh9"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7yF-04-TBF"/>
-                                <include reference="FDD-fk-bjp"/>
                                 <include reference="sPT-Ce-Y8L"/>
                                 <include reference="tcs-HR-kgT"/>
                                 <include reference="vg4-wX-Dp0"/>
                                 <include reference="G1Q-e7-bIt"/>
                                 <include reference="Xe4-cT-poB"/>
+                                <include reference="7yF-04-TBF"/>
+                                <include reference="FDD-fk-bjp"/>
                             </mask>
                         </variation>
                     </view>
@@ -106,6 +107,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BQ3-Xj-5fu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yuA-GZ-lS0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWP-Vp-c1M">
@@ -151,13 +153,13 @@
                                 <exclude reference="0Ds-Jw-thp"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="kdK-I6-Eat"/>
+                                <exclude reference="S2g-G6-nT0"/>
+                                <exclude reference="f0i-4O-Afh"/>
                                 <exclude reference="VHa-eV-APg"/>
                                 <exclude reference="XCh-u6-I47"/>
                                 <exclude reference="Eal-Kr-HOf"/>
                                 <exclude reference="WOo-SD-w6v"/>
-                                <exclude reference="S2g-G6-nT0"/>
-                                <exclude reference="f0i-4O-Afh"/>
-                                <exclude reference="kdK-I6-Eat"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -167,13 +169,13 @@
                                 <include reference="0Ds-Jw-thp"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="kdK-I6-Eat"/>
+                                <include reference="S2g-G6-nT0"/>
+                                <include reference="f0i-4O-Afh"/>
                                 <include reference="VHa-eV-APg"/>
                                 <include reference="XCh-u6-I47"/>
                                 <include reference="Eal-Kr-HOf"/>
                                 <include reference="WOo-SD-w6v"/>
-                                <include reference="S2g-G6-nT0"/>
-                                <include reference="f0i-4O-Afh"/>
-                                <include reference="kdK-I6-Eat"/>
                             </mask>
                         </variation>
                     </view>
