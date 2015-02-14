@@ -21,14 +21,6 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
-//            // Convert string path to url
-//            var filePathUrl = NSURL.fileURLWithPath(filePath)
-//
-//
-//        } else {
-//            println("Yo, unable to find the path!")
-//        }
 
         // Initialize Audio Player
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
