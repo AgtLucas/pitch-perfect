@@ -15,6 +15,7 @@ class PlaySoundsViewController: UIViewController {
     var receivedAudio:RecordedAudio!
 
     var audioEngine:AVAudioEngine!
+    var audioFile:AVAudioFile!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,7 @@ class PlaySoundsViewController: UIViewController {
         audioPlayer.enableRate = true
 
         audioEngine = AVAudioEngine()
+        audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +85,11 @@ class PlaySoundsViewController: UIViewController {
 
         audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
         audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
+
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        audioEngine.startAndReturnError(nil)
+
+        audioPlayerNode.play()
     }
     
     /*
