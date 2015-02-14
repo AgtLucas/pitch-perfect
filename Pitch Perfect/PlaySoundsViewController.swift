@@ -82,7 +82,7 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.attachNode(changePitchEffect)
 
         audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
-        audioEngine.connect(changePitchEffect, to: audioPlayerNode, format: nil)
+        audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
     }
     
     /*
