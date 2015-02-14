@@ -116,6 +116,9 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="45" y="81" width="100" height="148"/>
                                 </variation>
+                                <connections>
+                                    <action selector="playSlow:" destination="FQk-pO-ydX" eventType="touchUpInside" id="S4Q-BY-gwx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
