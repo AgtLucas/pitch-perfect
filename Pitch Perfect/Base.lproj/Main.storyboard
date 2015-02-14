@@ -135,6 +135,15 @@
                                     <action selector="stopAudio:" destination="FQk-pO-ydX" eventType="touchUpInside" id="Ukg-kG-3kw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m08-WK-Mrt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="294" width="46" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -151,6 +160,7 @@
                                 <exclude reference="DWP-Vp-c1M"/>
                                 <exclude reference="omN-CS-sO0"/>
                                 <exclude reference="0Ds-Jw-thp"/>
+                                <exclude reference="m08-WK-Mrt"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="kdK-I6-Eat"/>
@@ -167,6 +177,7 @@
                                 <include reference="DWP-Vp-c1M"/>
                                 <include reference="omN-CS-sO0"/>
                                 <include reference="0Ds-Jw-thp"/>
+                                <include reference="m08-WK-Mrt"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="kdK-I6-Eat"/>
