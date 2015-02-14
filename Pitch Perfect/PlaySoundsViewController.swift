@@ -11,13 +11,19 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
 
-    var audioPlayer = AVAudioPlayer()
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
+        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
+            // Convert string path to url
+            var filePathUrl = NSURL(string: filePath)
+            // Initialize Audio Player
+            var audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+
+        } else {
+            println("Yo, unable to find the path!")
+        }
     }
 
     override func didReceiveMemoryWarning() {
