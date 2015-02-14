@@ -14,6 +14,8 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayer:AVAudioPlayer!
     var receivedAudio:RecordedAudio!
 
+    var audioEngine:AVAudioEngine!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +32,8 @@ class PlaySoundsViewController: UIViewController {
         // Initialize Audio Player
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayer.enableRate = true
+
+        audioEngine = AVAudioEngine()
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +66,23 @@ class PlaySoundsViewController: UIViewController {
     }
 
     @IBAction func playChipmunkAudio(sender: UIButton) {
+        playAudioWithVariablePitch(1000)
+    }
+
+    func playAudioWithVariablePitch(pitch: Float) {
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+
+        var changePitchEffect = AVAudioUnitTimePitch()
+        changePitchEffect.pitch = pitch
+        audioEngine.attachNode(changePitchEffect)
+
+        audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
+        audioEngine.connect(changePitchEffect, to: audioPlayerNode, format: nil)
     }
     
     /*
