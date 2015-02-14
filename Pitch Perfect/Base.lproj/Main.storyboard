@@ -135,14 +135,11 @@
                                     <action selector="stopAudio:" destination="FQk-pO-ydX" eventType="touchUpInside" id="Ukg-kG-3kw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m08-WK-Mrt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m08-WK-Mrt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="Chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="73" y="294" width="46" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,7 +149,9 @@
                             <constraint firstItem="DWP-Vp-c1M" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="50" id="VHa-eV-APg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="omN-CS-sO0" secondAttribute="trailing" constant="30" id="WOo-SD-w6v"/>
                             <constraint firstItem="DWP-Vp-c1M" firstAttribute="leading" secondItem="yuA-GZ-lS0" secondAttribute="leadingMargin" constant="30" id="XCh-u6-I47"/>
+                            <constraint firstItem="m08-WK-Mrt" firstAttribute="leading" secondItem="yuA-GZ-lS0" secondAttribute="leadingMargin" constant="30" id="evd-cf-fDq"/>
                             <constraint firstItem="0Ds-Jw-thp" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="431" id="f0i-4O-Afh"/>
+                            <constraint firstItem="m08-WK-Mrt" firstAttribute="top" secondItem="DWP-Vp-c1M" secondAttribute="bottom" constant="60" id="fV1-YS-72B"/>
                             <constraint firstItem="BQ3-Xj-5fu" firstAttribute="top" secondItem="0Ds-Jw-thp" secondAttribute="bottom" constant="55" id="kdK-I6-Eat"/>
                         </constraints>
                         <variation key="default">
@@ -163,13 +162,15 @@
                                 <exclude reference="m08-WK-Mrt"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="kdK-I6-Eat"/>
-                                <exclude reference="S2g-G6-nT0"/>
-                                <exclude reference="f0i-4O-Afh"/>
                                 <exclude reference="VHa-eV-APg"/>
                                 <exclude reference="XCh-u6-I47"/>
+                                <exclude reference="evd-cf-fDq"/>
+                                <exclude reference="fV1-YS-72B"/>
                                 <exclude reference="Eal-Kr-HOf"/>
                                 <exclude reference="WOo-SD-w6v"/>
+                                <exclude reference="S2g-G6-nT0"/>
+                                <exclude reference="f0i-4O-Afh"/>
+                                <exclude reference="kdK-I6-Eat"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -180,13 +181,15 @@
                                 <include reference="m08-WK-Mrt"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="kdK-I6-Eat"/>
-                                <include reference="S2g-G6-nT0"/>
-                                <include reference="f0i-4O-Afh"/>
                                 <include reference="VHa-eV-APg"/>
                                 <include reference="XCh-u6-I47"/>
+                                <include reference="evd-cf-fDq"/>
+                                <include reference="fV1-YS-72B"/>
                                 <include reference="Eal-Kr-HOf"/>
                                 <include reference="WOo-SD-w6v"/>
+                                <include reference="S2g-G6-nT0"/>
+                                <include reference="f0i-4O-Afh"/>
+                                <include reference="kdK-I6-Eat"/>
                             </mask>
                         </variation>
                     </view>
@@ -215,6 +218,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chipmunk" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Stop Button" width="50" height="50"/>
         <image name="fastPlay" width="100" height="100"/>
