@@ -117,13 +117,13 @@
                                     <rect key="frame" x="45" y="81" width="100" height="148"/>
                                 </variation>
                                 <connections>
-                                    <action selector="playSlow:" destination="FQk-pO-ydX" eventType="touchUpInside" id="S4Q-BY-gwx"/>
+                                    <action selector="playSlowAudio:" destination="FQk-pO-ydX" eventType="touchUpInside" id="G05-4j-vQ1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DWP-Vp-c1M" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="30" id="VHa-eV-APg"/>
+                            <constraint firstItem="DWP-Vp-c1M" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="50" id="VHa-eV-APg"/>
                             <constraint firstItem="DWP-Vp-c1M" firstAttribute="leading" secondItem="yuA-GZ-lS0" secondAttribute="leadingMargin" constant="30" id="XCh-u6-I47"/>
                         </constraints>
                         <variation key="default">

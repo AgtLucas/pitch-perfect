@@ -20,9 +20,8 @@ class PlaySoundsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func playSlow(sender: UIButton) {
-        
+
+    @IBAction func playSlowAudio(sender: UIButton) {
     }
 
     /*
