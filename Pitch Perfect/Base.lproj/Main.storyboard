@@ -113,23 +113,23 @@
                                 <state key="normal" image="slowPlay">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="44" y="118" width="100" height="100"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="45" y="81" width="100" height="148"/>
                                 </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DWP-Vp-c1M" firstAttribute="leading" secondItem="yuA-GZ-lS0" secondAttribute="leadingMargin" constant="28" id="Fp3-Q2-UHV"/>
-                            <constraint firstAttribute="centerX" secondItem="DWP-Vp-c1M" secondAttribute="centerX" constant="106" id="NPv-s7-OFX"/>
+                            <constraint firstItem="DWP-Vp-c1M" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="30" id="VHa-eV-APg"/>
+                            <constraint firstItem="DWP-Vp-c1M" firstAttribute="leading" secondItem="yuA-GZ-lS0" secondAttribute="leadingMargin" constant="30" id="XCh-u6-I47"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="DWP-Vp-c1M"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Fp3-Q2-UHV"/>
-                                <exclude reference="NPv-s7-OFX"/>
+                                <exclude reference="VHa-eV-APg"/>
+                                <exclude reference="XCh-u6-I47"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -137,8 +137,8 @@
                                 <include reference="DWP-Vp-c1M"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Fp3-Q2-UHV"/>
-                                <include reference="NPv-s7-OFX"/>
+                                <include reference="VHa-eV-APg"/>
+                                <include reference="XCh-u6-I47"/>
                             </mask>
                         </variation>
                     </view>
