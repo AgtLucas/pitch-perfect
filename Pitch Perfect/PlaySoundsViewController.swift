@@ -22,6 +22,7 @@ class PlaySoundsViewController: UIViewController {
             var filePathUrl = NSURL.fileURLWithPath(filePath)
             // Initialize Audio Player
             audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+            audioPlayer.enableRate = true
 
         } else {
             println("Yo, unable to find the path!")
