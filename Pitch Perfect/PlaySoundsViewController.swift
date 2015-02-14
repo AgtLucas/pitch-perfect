@@ -11,6 +11,8 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
 
+    var audioPlayer:AVAudioPlayer!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +21,7 @@ class PlaySoundsViewController: UIViewController {
             // Convert string path to url
             var filePathUrl = NSURL(string: filePath)
             // Initialize Audio Player
-            var audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
 
         } else {
             println("Yo, unable to find the path!")
@@ -32,6 +34,7 @@ class PlaySoundsViewController: UIViewController {
     }
 
     @IBAction func playSlowAudio(sender: UIButton) {
+        audioPlayer.play()
     }
 
     /*
