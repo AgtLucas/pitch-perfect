@@ -39,7 +39,7 @@
 		DC78E2E01A8D5FB00081F1A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC78E2E11A8D5FB00081F1A2 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		DCF236971A8E8DFF00F5CFFC /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		DCF2369B1A8F7B8B00F5CFFC /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		DCF2369B1A8F7B8B00F5CFFC /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,6 @@
 		DC78E2BD1A8D5FB00081F1A2 = {
 			isa = PBXGroup;
 			children = (
-				DCF2369B1A8F7B8B00F5CFFC /* movie_quote.mp3 */,
 				DC78E2C81A8D5FB00081F1A2 /* Pitch Perfect */,
 				DC78E2DE1A8D5FB00081F1A2 /* Pitch PerfectTests */,
 				DC78E2C71A8D5FB00081F1A2 /* Products */,
@@ -96,6 +95,7 @@
 		DC78E2C91A8D5FB00081F1A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCF2369B1A8F7B8B00F5CFFC /* movie_quote.mp3 */,
 				DC78E2CA1A8D5FB00081F1A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
