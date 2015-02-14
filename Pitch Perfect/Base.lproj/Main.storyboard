@@ -144,10 +144,20 @@
                                     <action selector="playChipmunkAudio:" destination="FQk-pO-ydX" eventType="touchUpInside" id="o4j-pU-2ss"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-gR-wbE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Darth Vader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthVaderAudio:" destination="FQk-pO-ydX" eventType="touchUpInside" id="Lpm-Ao-B5w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="omN-CS-sO0" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="50" id="Eal-Kr-HOf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kT2-gR-wbE" secondAttribute="trailing" constant="30" id="HwO-uO-snD"/>
                             <constraint firstAttribute="centerX" secondItem="0Ds-Jw-thp" secondAttribute="centerX" constant="-2" id="S2g-G6-nT0"/>
                             <constraint firstItem="DWP-Vp-c1M" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="50" id="VHa-eV-APg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="omN-CS-sO0" secondAttribute="trailing" constant="30" id="WOo-SD-w6v"/>
@@ -156,6 +166,7 @@
                             <constraint firstItem="0Ds-Jw-thp" firstAttribute="top" secondItem="N4F-af-Nbk" secondAttribute="bottom" constant="431" id="f0i-4O-Afh"/>
                             <constraint firstItem="m08-WK-Mrt" firstAttribute="top" secondItem="DWP-Vp-c1M" secondAttribute="bottom" constant="60" id="fV1-YS-72B"/>
                             <constraint firstItem="BQ3-Xj-5fu" firstAttribute="top" secondItem="0Ds-Jw-thp" secondAttribute="bottom" constant="55" id="kdK-I6-Eat"/>
+                            <constraint firstItem="kT2-gR-wbE" firstAttribute="top" secondItem="omN-CS-sO0" secondAttribute="bottom" constant="60" id="zDW-am-q0p"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -163,6 +174,7 @@
                                 <exclude reference="omN-CS-sO0"/>
                                 <exclude reference="0Ds-Jw-thp"/>
                                 <exclude reference="m08-WK-Mrt"/>
+                                <exclude reference="kT2-gR-wbE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="VHa-eV-APg"/>
@@ -171,6 +183,8 @@
                                 <exclude reference="fV1-YS-72B"/>
                                 <exclude reference="Eal-Kr-HOf"/>
                                 <exclude reference="WOo-SD-w6v"/>
+                                <exclude reference="HwO-uO-snD"/>
+                                <exclude reference="zDW-am-q0p"/>
                                 <exclude reference="S2g-G6-nT0"/>
                                 <exclude reference="f0i-4O-Afh"/>
                                 <exclude reference="kdK-I6-Eat"/>
@@ -182,6 +196,7 @@
                                 <include reference="omN-CS-sO0"/>
                                 <include reference="0Ds-Jw-thp"/>
                                 <include reference="m08-WK-Mrt"/>
+                                <include reference="kT2-gR-wbE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="VHa-eV-APg"/>
@@ -190,6 +205,8 @@
                                 <include reference="fV1-YS-72B"/>
                                 <include reference="Eal-Kr-HOf"/>
                                 <include reference="WOo-SD-w6v"/>
+                                <include reference="HwO-uO-snD"/>
+                                <include reference="zDW-am-q0p"/>
                                 <include reference="S2g-G6-nT0"/>
                                 <include reference="f0i-4O-Afh"/>
                                 <include reference="kdK-I6-Eat"/>
@@ -222,6 +239,7 @@
     </scenes>
     <resources>
         <image name="Chipmunk" width="100" height="100"/>
+        <image name="Darth Vader" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Stop Button" width="50" height="50"/>
         <image name="fastPlay" width="100" height="100"/>
