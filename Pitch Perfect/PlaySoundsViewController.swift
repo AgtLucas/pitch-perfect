@@ -35,6 +35,7 @@ class PlaySoundsViewController: UIViewController {
     }
 
     @IBAction func playSlowAudio(sender: UIButton) {
+        audioPlayer.rate = 0.5
         audioPlayer.play()
     }
 
