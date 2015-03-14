@@ -40,6 +40,7 @@ class PlaySoundsViewController: UIViewController {
         audioPlayer.stop()
         audioPlayer.rate = rateValue
         audioPlayer.currentTime = 0.0
+        audioPlayer.volume = 1.0
         audioPlayer.play()
         return rateValue
     }
